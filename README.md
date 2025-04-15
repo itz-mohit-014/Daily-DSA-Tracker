@@ -12,6 +12,7 @@ Welcome to my daily progress tracker where I solve DSA problems consistently fro
 
 | #   | Date           | Platform | Problem Title & Link                                                                | Difficulty | Time & Space Complexity         | Remarks / New Learning |
 | --- | -------------- | -------- | ----------------------------------------------------------------------------------- | ---------- | ------------------------------- | ----------------------- |
+| 15  | April 15, 2025 | GFG | [Add Binary Strings](https://www.geeksforgeeks.org/problems/add-binary-strings3805/1) | Medium | `O(n+m)` time, `O(1)` space | <details><summary>Click to expand</summary>Learn a modular approach to work on bit by bit.</details> |
 | 14  | April 14, 2025 | GFG      | [Implement Atoi](https://www.geeksforgeeks.org/problems/second-largest3735/1)       | Medium     | `O(n)` time, `O(1)` space       | <details><summary>Click to expand</summary>Learned a more reliable technique to prevent integer overflow: always perform the overflow check before multiplying or adding values. In Java, if you multiply first and the result overflows, it wraps around (like a clock after 12 → 1), which can lead to incorrect results.</details> |
 
 

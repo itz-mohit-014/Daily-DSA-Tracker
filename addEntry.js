@@ -15,11 +15,9 @@ function getFormattedDate() {
 function generateRow(data) {
   return `| ${data.problemNumber}  | ${getFormattedDate()} | ${
     data.platform
-  } | [${data.title}](${data.link}) | \`${data.folderPath}\` | \`${
+  } | [${data.title}](${data.link}) | ${data.difficulty} | \`${
     data.complexity.time
-  }\` time, \`${data.complexity.space}\` space | ${data.approach} | ${
-    data.remarks
-  } |\n`;
+  }\` time, \`${data.complexity.space}\` space | <details><summary>Click to expand</summary>${ data.remarks }</details> |\n`;
 }
 
 // 🛠 Insert the row after the table header line
@@ -46,10 +44,9 @@ const questions = [
   "Platform (LeetCode/GFG): ",
   "Problem Title: ",
   "Problem Link: ",
-  "Solution File Path (e.g., ./Day04/SomeProblem.java): ",
+  "Difficulty (e.g., Hard/Medium/Low): ",
   "Time Complexity: ",
   "Space Complexity: ",
-  "Approach Summary: ",
   "Remarks / New Learning: ",
 ];
 
@@ -62,10 +59,9 @@ function askQuestion(index = 0) {
       platform,
       title,
       link,
-      folderPath,
+      difficulty,
       time,
       space,
-      approach,
       remarks,
     ] = answers;
 
@@ -74,12 +70,11 @@ function askQuestion(index = 0) {
       platform,
       title,
       link,
-      folderPath,
+      difficulty,
       complexity: {
         time,
         space,
       },
-      approach,
       remarks,
     });
 
