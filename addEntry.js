@@ -23,9 +23,9 @@ function generateRow(data) {
 // 🛠 Insert the row after the table header line
 function insertRowIntoReadme(row, readmePath = "README.md") {
   const content = fs.readFileSync(readmePath, "utf-8").split("\n");
-  const headerIndex = content.findIndex((line) => line.startsWith("| --- "));
+  const headerIndex = content.findIndex((line) => line.startsWith("--- --------------------------"));
   if (headerIndex !== -1) {
-    content.splice(headerIndex + 1, 0, row.trim());
+    content.splice(headerIndex - 2, 0, row.trim());
     fs.writeFileSync(readmePath, content.join("\n"));
     console.log("✅ Row added to README.md successfully!");
   } else {

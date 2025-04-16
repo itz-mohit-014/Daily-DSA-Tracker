@@ -1,3 +1,4 @@
+package Day15;
 public class AddBinaryString {
     static public String addBinary(String s1, String s2){
         int n1 = s1.length();
