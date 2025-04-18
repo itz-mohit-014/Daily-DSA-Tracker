@@ -16,6 +16,7 @@ Welcome to my daily progress tracker where I solve DSA problems consistently fro
 | 15  | April 15, 2025 | GFG | [Add Binary Strings](https://www.geeksforgeeks.org/problems/add-binary-strings3805/1) | Medium | `O(n+m)` time, `O(1)` space | <details><summary>Click to expand</summary>Learn a modular approach to work on bit by bit.</details> |
 | 16  | April 16, 2025 | GFG | [Anagrams](https://www.geeksforgeeks.org/problems/anagram-1587115620/1) | Easy | `O(n)` time, `O(1)` space | <details><summary>Click to expand</summary>-</details> |
 | 17  | April 17, 2025 | GFG | [Non Repeating Character](https://www.geeksforgeeks.org/problems/non-repeating-character-1587115620/1) | Easy | `O(n)` time, `O(1)` space | <details><summary>Click to expand</summary>-</details> |
+| 18  | April 18, 2025 | GFG | [Search Pattern (KMP-Algorithm)](https://www.geeksforgeeks.org/problems/search-pattern0205/1) | Hard | `O(n1 * n2)` time, `O(n2 + k), where k is the number of matches (up to n1)` space |  KMP (Knuth-Morris-Pratt) Algorithm - It preprocesses the pattern to build an LPS (Longest Prefix Suffix) array. Instead of checking each substring individually, it jumps through the text using the LPS table to avoid unnecessary comparisons. - It preprocesses the pattern to build an LPS (Longest Prefix Suffix) array. |
 
 
 --- --------------------------
